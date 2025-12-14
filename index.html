@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>BabyDNA.bio – Baby, Paternity &amp; Fertility DNA Testing (2025)</title>
+  <meta name="description"
+        content="BabyDNA.bio is an independent, evidence-based guide to baby DNA testing topics: paternity tests, fertility testing, pregnancy-related DNA questions, and at-home test kits. Learn what tests can and cannot tell you, with comparisons via Genectics.com." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://babydna.bio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BabyDNA.bio – Baby, Paternity &amp; Fertility DNA Guide" />
+  <meta property="og:description"
+        content="Neutral, evidence-based information about baby DNA topics: paternity, fertility testing, pregnancy testing and at-home DNA kits – with comparisons via Genectics.com." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://babydna.bio/" />
+  <meta property="og:image" content="https://genectics.com/og-image-dna-baby.jpg" />
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BabyDNA.bio",
+    "url": "https://babydna.bio/",
+    "description": "Independent, evidence-based information about baby-related DNA testing topics.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ronarn",
+      "url": "https://ronarn.com"
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can an at-home paternity test be trusted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many at-home paternity tests can be accurate when collected correctly, but accuracy and legal validity are not the same thing. Court-admissible tests typically require verified chain-of-custody. BabyDNA.bio explains the differences and points to a dedicated paternity overview on Paternity.bio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a peace-of-mind test and a legal paternity test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Peace-of-mind testing is usually collected at home and is meant for personal clarity. Legal paternity testing generally requires identity verification and documented chain-of-custody so results can be used in court or official processes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can DNA tests say anything about fertility?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fertility is influenced by many factors. Some tests measure hormones or biomarkers, while genetic tests may identify selected risk markers or carrier status depending on provider and region. BabyDNA.bio focuses on what is evidence-based and when to speak with a clinician."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do pregnancy tests and DNA tests measure the same thing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Pregnancy tests typically detect hCG (a hormone) to confirm pregnancy. DNA tests analyze genetic markers and are used for ancestry, relatives, or specific questions like paternity—depending on test type."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- ===== Consent (HARD) ===== -->
+  <style>
+    body.consent-locked {
+      overflow: hidden !important;
+      touch-action: none !important;
+    }
+    .consent-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.82);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    .consent-overlay[aria-hidden="false"] { display: flex; }
+
+    .consent-modal {
+      width: 100%;
+      max-width: 720px;
+      background: #0b1220;
+      color: #e5e7eb;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+    }
+    .consent-header { padding: 18px 18px 0 18px; }
+    .consent-title { margin: 0; font-size: 1.1rem; letter-spacing: 0.01em; }
+    .consent-body {
+      padding: 14px 18px 18px 18px;
+      line-height: 1.55;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .consent-body p { margin: 10px 0; }
+    .consent-list { margin: 12px 0 0 0; padding-left: 18px; }
+    .consent-list li { margin: 6px 0; }
+
+    .consent-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 16px 18px 18px 18px;
+      background: rgba(2, 6, 23, 0.5);
+      border-top: 1px solid rgba(148, 163, 184, 0.14);
+    }
+    .consent-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.92rem;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    .consent-accept { background: #ec4899; color: #0b1220; }
+    .consent-reject {
+      background: transparent;
+      color: #e5e7eb;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+    .consent-links {
+      margin-left: auto;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .consent-links a { color: #93c5fd; text-decoration: none; }
+    .consent-links a:hover { text-decoration: underline; }
+  </style>
+
+  <!-- Consent + GA loader (GA4 loads only AFTER accept) -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "ronarn_consent_analytics_v1";
+      const GA_ID = "G-3GVJ73QQ5J"; // same as Genectics.com
+
+      function lockPage() {
+        document.body.classList.add("consent-locked");
+        const overlay = document.getElementById("consent-overlay");
+        if (overlay) overlay.setAttribute("aria-hidden", "false");
+      }
+
+      function unlockPage() {
+        document.body.classList.remove("consent-locked");
+        const overlay = document.getElementById("consent-overlay");
+        if (overlay) overlay.setAttribute("aria-hidden", "true");
+      }
+
+      function loadGA4() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      function setConsent(value) { localStorage.setItem(CONSENT_KEY, value); }
+      function getConsent() { return localStorage.getItem(CONSENT_KEY); }
+      function clearConsent() { localStorage.removeItem(CONSENT_KEY); }
+
+      window.__openPrivacySettings = function () {
+        clearConsent();
+        window.location.reload();
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const saved = getConsent();
+
+        if (saved === "accepted") { loadGA4(); unlockPage(); return; }
+        if (saved === "rejected") { unlockPage(); return; }
+
+        lockPage();
+
+        const btnAccept = document.getElementById("consent-accept");
+        const btnReject = document.getElementById("consent-reject");
+
+        btnAccept.addEventListener("click", function () {
+          setConsent("accepted");
+          loadGA4();
+          unlockPage();
+        });
+
+        btnReject.addEventListener("click", function () {
+          setConsent("rejected");
+          unlockPage();
+        });
+      });
+    })();
+  </script>
+</head>
+
+<body class="consent-locked">
+  <!-- HARD Consent Overlay -->
+  <div id="consent-overlay" class="consent-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Privacy choices">
+    <div class="consent-modal">
+      <div class="consent-header">
+        <h2 class="consent-title">Privacy choices</h2>
+      </div>
+      <div class="consent-body">
+        <p>
+          BabyDNA.bio uses <strong>analytics</strong> to understand which pages are useful (paternity, fertility, pregnancy topics)
+          and to improve the site over time.
+        </p>
+        <ul class="consent-list">
+          <li><strong>If you accept:</strong> we load Google Analytics (GA4) to measure visits and basic usage trends.</li>
+          <li><strong>If you reject:</strong> the site still works normally, but we do not load analytics.</li>
+        </ul>
+        <p>
+          Acceptance is only about <strong>analytics</strong>. Some links may be affiliate links on connected comparison pages.
+        </p>
+      </div>
+      <div class="consent-actions">
+        <button id="consent-accept" class="consent-btn consent-accept" type="button">Accept analytics</button>
+        <button id="consent-reject" class="consent-btn consent-reject" type="button">Reject</button>
+
+        <div class="consent-links">
+          <span>Learn more:</span>
+          <a href="/privacy.html">Privacy</a>
+          <span>·</span>
+          <a href="/about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="brand-name">BabyDNA.bio</div>
+        <div class="brand-tagline">
+          Evidence-based guidance on baby DNA, paternity and fertility testing.
+        </div>
+      </div>
+      <div class="trust-tags">
+        <span class="trust-tag">No sponsorships</span>
+        <span class="trust-tag">Educational only</span>
+        <span class="trust-tag">Linked to Genectics.com</span>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <h1 id="hero-heading" class="hero-title">
+            Get clarity on paternity, fertility and baby-related DNA testing.
+          </h1>
+
+          <p class="hero-subtitle">
+            When emotions are high, it’s easy to buy the wrong test or misunderstand what a result means.
+            BabyDNA.bio exists to explain what’s evidence-based, what’s marketing, and what to do next.
+          </p>
+
+          <ul class="hero-list">
+            <li>Understand the difference between <strong>peace-of-mind</strong> and <strong>legal</strong> testing.</li>
+            <li>Learn what fertility tests measure (and what they don’t).</li>
+            <li>Use Genectics.com to compare reputable at-home DNA test kits.</li>
+          </ul>
+
+          <div class="hero-highlight">
+            Our goal is simple: make it harder to waste money on the wrong test — and easier to make informed choices.
+          </div>
+
+          <div class="hero-actions">
+            <a href="#paternity" class="btn-primary">
+              Start with paternity basics
+              <span class="chevron">›</span>
+            </a>
+            <a href="#fertility" class="btn-secondary">
+              Fertility &amp; hormone testing
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="rating-pill">
+            <span class="star">★</span>
+            Most common: <strong>“Am I the father?”</strong>
+          </div>
+          <p class="hero-note">
+            If your question is specifically about paternity, start with the dedicated overview at
+            <strong>Paternity.bio</strong> for a focused explanation of legal vs. at-home testing paths.
+          </p>
+        </aside>
+      </section>
+
+      <!-- PATERNITY -->
+      <section id="paternity" class="card">
+        <h2 class="section-title">Paternity testing: the two paths that people confuse</h2>
+        <p class="section-subtitle">
+          The most important concept is that <strong>accuracy</strong> and <strong>legal validity</strong> are not the same.
+          Many at-home tests can be accurate, but legal use often requires a verified process.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>1) Peace-of-mind paternity tests (at-home)</h3>
+            <p>
+              Typically collected at home using cheek swabs. Designed for personal clarity. Usually cheaper and faster.
+            </p>
+            <ul class="hero-list">
+              <li>Good for personal confirmation.</li>
+              <li>Collection quality matters (follow instructions precisely).</li>
+              <li>Not automatically valid for court / official processes.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>2) Legal paternity tests (chain-of-custody)</h3>
+            <p>
+              Requires identity verification and controlled sample handling so results can be used in court or official matters.
+            </p>
+            <ul class="hero-list">
+              <li>Documentation and verified collection.</li>
+              <li>Often done via clinics/labs.</li>
+              <li>More expensive, but the right choice when stakes are high.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="section-subtitle" style="margin-top: 14px;">
+          For a focused comparison and practical steps, see:
+          <a href="https://paternity.bio/" rel="noopener">Paternity.bio</a>.
+        </p>
+      </section>
+
+      <!-- BABY + PREGNANCY -->
+      <section id="pregnancy" class="card">
+        <h2 class="section-title">Pregnancy tests vs. DNA tests</h2>
+        <p class="section-subtitle">
+          Pregnancy tests usually detect <strong>hCG</strong> (a hormone). DNA tests analyze genetic markers.
+          They answer different questions, and mixing them up leads to bad decisions.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Pregnancy tests (hCG)</h3>
+            <ul class="hero-list">
+              <li>Designed to confirm pregnancy.</li>
+              <li>Timing matters (too early can show false negatives).</li>
+              <li>Does not say anything about ancestry or paternity by itself.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>DNA tests (genetic markers)</h3>
+            <ul class="hero-list">
+              <li>Used for ancestry, relatives, and paternity questions (depending on test type).</li>
+              <li>Requires proper collection and clear provider terms.</li>
+              <li>Not a substitute for medical diagnostics.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- FERTILITY -->
+      <section id="fertility" class="card">
+        <h2 class="section-title">Fertility &amp; hormone testing: what is actually measurable</h2>
+        <p class="section-subtitle">
+          “Fertility” is not one single metric. Many consumer tests measure hormones or biomarkers, while genetic tests may
+          cover selected markers or carrier status depending on region and provider.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>What at-home tests can help with</h3>
+            <ul class="hero-list">
+              <li>Ovulation timing (LH-based tests) for cycle tracking.</li>
+              <li>Selected hormone markers via lab panels (varies by provider).</li>
+              <li>General education on what results mean and what they don’t.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>When you should consider a clinician</h3>
+            <ul class="hero-list">
+              <li>Persistent irregular cycles or severe symptoms.</li>
+              <li>Repeated pregnancy loss.</li>
+              <li>When results can change medical decisions.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="section-subtitle" style="margin-top: 14px;">
+          For broader kit comparisons (including ancestry/health-style DNA kits), use:
+          <a href="https://genectics.com/?ref=babydna.bio-fertility" target="_blank" rel="noopener">Genectics.com</a>.
+        </p>
+      </section>
+
+      <!-- WHERE GENECTICS FITS -->
+      <section id="compare" class="card">
+        <h2 class="section-title">Compare at-home DNA test kits (ancestry / relatives / health)</h2>
+        <p class="section-subtitle">
+          BabyDNA.bio is primarily educational. For detailed, side-by-side comparisons of mainstream DNA kits
+          (shipping regions, features, privacy considerations and pricing), we link to the full comparison hub below.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://genectics.com/?ref=babydna.bio-cta"
+             class="btn-primary" target="_blank" rel="noopener">
+            Go to Genectics.com – DNA kit comparison
+            <span class="chevron">›</span>
+          </a>
+          <a href="https://paternity.bio/" class="btn-secondary" target="_blank" rel="noopener">
+            Go to Paternity.bio – paternity overview
+          </a>
+        </div>
+      </section>
+
+      <!-- MINI FAQ -->
+      <section class="card faq" aria-labelledby="faq-heading" style="margin-top: 24px;">
+        <h2 id="faq-heading" class="section-title">Baby DNA / paternity / fertility FAQ</h2>
+
+        <h3>Can an at-home paternity test be “wrong”?</h3>
+        <p>
+          Errors are often related to collection mistakes, contamination, or using the wrong people/samples.
+          Choose reputable providers and follow collection instructions precisely. For legal certainty, use a chain-of-custody test.
+        </p>
+
+        <h3>Are fertility tests the same as DNA tests?</h3>
+        <p>
+          No. Many fertility tests measure hormones or biomarkers. DNA tests analyze genetic markers and are used for different purposes.
+        </p>
+
+        <h3>Do I need a lawyer for paternity questions?</h3>
+        <p>
+          If paternity affects custody, legal rights, financial obligations, immigration, or official records, you should consider professional advice.
+          Start with understanding legal vs. non-legal testing paths.
+        </p>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <section class="disclaimer">
+        <p>
+          BabyDNA.bio does not provide medical or legal advice. This website is for informational and educational purposes only.
+          Always consult qualified professionals for medical decisions or legal matters.
+        </p>
+        <p>
+          Some outgoing links may be affiliate links on connected comparison pages. Editorial content is independent and not for sale.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <span>© <span id="year"></span> BabyDNA.bio – Independent baby DNA education.</span>
+      <span>Operated by ronarn AS, Norway. Neutral information site linked to Genectics.com.</span>
+      <span>Contact: <a href="mailto:info@babydna.bio">info@babydna.bio</a></span>
+      <span>Business address: Pb. 1010 Lillestrøm Syd, 2012 Lillestrøm, Norway</span>
+
+      <span class="footer-links">
+        <a href="/about.html">About BabyDNA.bio</a> ·
+        <a href="/privacy.html">On-site Privacy</a> ·
+        <a href="https://organization.bio" target="_blank" rel="noopener">About the Publisher</a> ·
+        <a href="https://contactus.bio" target="_blank" rel="noopener">Network Contact</a> ·
+        <a href="https://disclaimer.bio" target="_blank" rel="noopener">Disclaimer</a> ·
+        <a href="https://terms.bio" target="_blank" rel="noopener">Terms</a>
+        <span> · </span>
+        <a href="#" onclick="window.__openPrivacySettings(); return false;">Privacy settings</a>
+      </span>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
